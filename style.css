@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: url(imgs/Ellipse\ 4.png) no-repeat;
+  background-position-x: 100%;
+  background-position-y: -5%;
+  background-color: #f1ba34;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 45px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.header .logo .logo-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+}
+
+.header .navbar {
+  display: flex;
+  gap: 26px;
+}
+
+.header .navbar a.active {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+}
+
+.header .navbar a.active::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  display: block;
+}
+
+.header .navbar a {
+  color: #000000;
+  position: relative;
+}
+
+.header .navbar a:nth-child(5) {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header .basket {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header .basket .basket-icon {
+  display: inline-block;
+  width: 37px;
+  height: 34px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.header .basket .vector {
+  cursor: pointer;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home .content {
+  max-width: 475px;
+}
+
+.home .content h1 {
+  max-width: 400px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.home .content p {
+  max-width: 400px;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.home .content .content-btn {
+  all: unset;
+  width: 286px;
+  height: 52px;
+  background-color: #F63D3D;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 40px;
+  text-align: center;
+}

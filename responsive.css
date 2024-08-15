@@ -1,0 +1,39 @@
+@media screen and (max-width: 1150px) {
+  .header .basket {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header .navbar {
+    display: none;
+  }
+
+  .header .logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: cover;
+  }
+
+  .home .content {
+    text-align: center;
+    text-align: justify;
+  }
+
+  .home .content h1 {
+    font-size: 25px;
+  }
+
+  .home .content p {
+    font-size: 15px;
+  }
+
+  .home .content .content-btn {
+    width: 240px;
+  }
+}
